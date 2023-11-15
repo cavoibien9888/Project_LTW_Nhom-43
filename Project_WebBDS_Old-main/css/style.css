@@ -150,6 +150,9 @@
         width: 60px;
         position: absolute;
         background-color: #fff;
+        text-align: center;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 5px;
     }  
 
     .home-index img {
@@ -3164,7 +3167,7 @@
     }
 
     .footer-distributed .footer-company-name{
-        color:  #222;
+        color:  #ffffff;
         font-size: 14px;
         font-weight: normal;
         margin: 0;
