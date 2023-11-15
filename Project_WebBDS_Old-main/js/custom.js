@@ -26,330 +26,348 @@
   
 **/
 
-jQuery(function($){
+jQuery(function($) {
 
 
-  /* ----------------------------------------------------------- */
-  /*  1. FIXED NAVBAR 
-  /* ----------------------------------------------------------- */
-    
-    
-  jQuery(window).bind('scroll', function () {
-    if (jQuery(window).scrollTop() > 200) {
-        jQuery('.main-navbar').addClass('navbar-fixed-top');
-        
-      } else {
-          jQuery('.main-navbar').removeClass('navbar-fixed-top');          
-      }
-  });
-  
-  /* ----------------------------------------------------------- */
-  /*  2. AGENTS SLIDER
-  /* ----------------------------------------------------------- */    
+    /* ----------------------------------------------------------- */
+    /*  1. FIXED NAVBAR 
+    /* ----------------------------------------------------------- */
+
+
+    jQuery(window).bind('scroll', function() {
+        if (jQuery(window).scrollTop() > 200) {
+            jQuery('.main-navbar').addClass('navbar-fixed-top');
+
+        } else {
+            jQuery('.main-navbar').removeClass('navbar-fixed-top');
+        }
+    });
+
+    /* ----------------------------------------------------------- */
+    /*  2. AGENTS SLIDER
+    /* ----------------------------------------------------------- */
 
     jQuery('.aa-agents-slider').slick({
-      dots: false,
-      arrows: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2500,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
     });
 
-  /* ----------------------------------------------------------- */
-  /*  3. TESTIMONIAL SLIDER 
-  /* ----------------------------------------------------------- */    
+    /* ----------------------------------------------------------- */
+    /*  3. TESTIMONIAL SLIDER 
+    /* ----------------------------------------------------------- */
 
     jQuery('.aa-testimonial-slider').slick({
-        dots: false,      
+        dots: false,
         infinite: true,
-        speed: 500,      
+        arrows: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        fade: true,
         cssEase: 'linear'
-      });
 
-  /* ----------------------------------------------------------- */
-  /*  4. CLIENT BRAND SLIDER (SLICK SLIDER)
-  /* ----------------------------------------------------------- */  
-
-   jQuery('.aa-client-brand-slider').slick({
-      dots: false,
-      arrows: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2500,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
     });
 
-  
-  /* ----------------------------------------------------------- */
-  /*  5. TOP SLIDER (SLICK SLIDER)
-  /* ----------------------------------------------------------- */    
+    /* ----------------------------------------------------------- */
+    /*  4. CLIENT BRAND SLIDER (SLICK SLIDER)
+    /* ----------------------------------------------------------- */
+
+    jQuery('.aa-client-brand-slider').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+
+
+    /* ----------------------------------------------------------- */
+    /*  5. TOP SLIDER (SLICK SLIDER)
+    /* ----------------------------------------------------------- */
 
     jQuery('.aa-top-slider').slick({
-      dots: false,
-      infinite: true,
-      arrows: true,
-      speed: 500,
-      fade: true,
-      cssEase: 'linear'
+        dots: false,
+        infinite: true,
+        arrows: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        fade: true,
+        cssEase: 'linear'
+
     });
-    
-  /* ----------------------------------------------------------- */
-  /*  6. LATEST PRODUCT SLIDER (SLICK SLIDER)
-  /* ----------------------------------------------------------- */      
+
+    /* ----------------------------------------------------------- */
+    /*  6. LATEST PRODUCT SLIDER (SLICK SLIDER)
+    /* ----------------------------------------------------------- */
 
     jQuery('.aa-properties-details-img').slick({
-      dots: false,
-      infinite: true,
-      arrows: true,
-      speed: 500,      
-      cssEase: 'linear'
+        dots: false,
+        infinite: true,
+        arrows: true,
+        speed: 500,
+        cssEase: 'linear'
     });
 
-      
-  /* ----------------------------------------------------------- */
-  /*  7. HOVER DROPDOWN MENU
-  /* ----------------------------------------------------------- */ 
-  
-  // for hover dropdown menu
+
+    /* ----------------------------------------------------------- */
+    /*  7. HOVER DROPDOWN MENU
+    /* ----------------------------------------------------------- */
+
+    // for hover dropdown menu
     jQuery('ul.nav li.dropdown').hover(function() {
-      jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+        jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
     }, function() {
-      jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+        jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
     });
 
- 
-  /* ----------------------------------------------------------- */
-  /* 8. ADVANCE SEARCH FILTER  (noUiSlider SLIDER)
-  /* ----------------------------------------------------------- */        
 
-    jQuery(function(){
-      if(jQuery('body').is('.aa-price-range')){
-        // FOR AREA SECTION
-       var skipSlider = document.getElementById('aa-sqrfeet-range');
-        noUiSlider.create(skipSlider, {
-            range: {
-              'min': 0,
-              '10%': 100,
-              '20%': 200,
-              '30%': 300,
-              '40%': 400,
-              '50%': 500,
-              '60%': 600,
-              '70%': 700,
-              '80%': 800,
-              '90%': 900,
-              'max': 1000
-            },
-            snap: true,
-            connect: true,
-            start: [200, 700]
-        });
-        // for value print
-        var skipValues = [
-          document.getElementById('skip-value-lower'),
-          document.getElementById('skip-value-upper')
-        ];
+    /* ----------------------------------------------------------- */
+    /* 8. ADVANCE SEARCH FILTER  (noUiSlider SLIDER)
+    /* ----------------------------------------------------------- */
 
-        skipSlider.noUiSlider.on('update', function( values, handle ) {
-          skipValues[handle].innerHTML = values[handle];
-        });
+    jQuery(function() {
+        if (jQuery('body').is('.aa-price-range')) {
+            // FOR AREA SECTION
+            var skipSlider = document.getElementById('aa-sqrfeet-range');
+            noUiSlider.create(skipSlider, {
+                range: {
+                    'min': 30,
+                    '10%': 50,
+                    '20%': 70,
+                    '30%': 100,
+                    '40%': 150,
+                    '50%': 200,
+                    '60%': 250,
+                    '70%': 300,
+                    '80%': 350,
+                    '90%': 400,
+                    'max': 500
+                },
+                snap: true,
+                connect: true,
+                start: [70, 300]
+            });
+            // for value print
+            var skipValues = [
+                document.getElementById('skip-value-lower'),
+                document.getElementById('skip-value-upper')
+            ];
 
-        // FOR PRICE SECTION
+            skipSlider.noUiSlider.on('update', function(values, handle) {
+                skipValues[handle].innerHTML = values[handle];
+            });
 
-        var skipSlider2 = document.getElementById('aa-price-range');
-        noUiSlider.create(skipSlider2, {
-            range: {
-                'min': 0,
-                '10%': 100,
-                '20%': 200,
-                '30%': 300,
-                '40%': 400,
-                '50%': 500,
-                '60%': 600,
-                '70%': 700,
-                '80%': 800,
-                '90%': 900,
-                'max': 1000
-            },
-            snap: true,
-            connect: true,
-            start: [200, 700]
-        });
-        // for value print
-        var skipValues2 = [
-          document.getElementById('skip-value-lower2'),
-          document.getElementById('skip-value-upper2')
-        ];
+            // FOR PRICE SECTION
 
-        skipSlider2.noUiSlider.on('update', function( values, handle ) {
-          skipValues2[handle].innerHTML = values[handle];
-        });
-      }
+            var skipSlider2 = document.getElementById('aa-price-range');
+            noUiSlider.create(skipSlider2, {
+                range: {
+                    'min': 0,
+                    '5%': 1,
+                    '10%': 2,
+                    '15%': 3,
+                    '20%': 4,
+                    '25%': 5,
+                    '30%': 6,
+                    '35%': 7,
+                    '40%': 8,
+                    '45%': 9,
+                    '50%': 10,
+                    '55%': 11,
+                    '60%': 12,
+                    '65%': 13,
+                    '70%': 14,
+                    '75%': 15,
+                    '80%': 16,
+                    '85%': 17,
+                    '90%': 18,
+                    '95%': 19,
+                    'max': 20
+                },
+                snap: true,
+                connect: true,
+                start: [4, 15]
+            });
+            // for value print
+            var skipValues2 = [
+                document.getElementById('skip-value-lower2'),
+                document.getElementById('skip-value-upper2')
+            ];
+
+            skipSlider2.noUiSlider.on('update', function(values, handle) {
+                skipValues2[handle].innerHTML = values[handle];
+            });
+        }
     });
 
-  /* ----------------------------------------------------------- */
-  /*  9. MIXIT FILTER ( FOR GALLERY ) 
-  /* ----------------------------------------------------------- */  
+    /* ----------------------------------------------------------- */
+    /*  9. MIXIT FILTER ( FOR GALLERY ) 
+    /* ----------------------------------------------------------- */
 
-    jQuery(function(){
-      jQuery('#mixit-container').mixItUp();
+    jQuery(function() {
+        jQuery('#mixit-container').mixItUp();
     });
 
-  /* ----------------------------------------------------------- */
-  /*  10. FANCYBOX ( FOR PORTFOLIO POPUP VIEW ) 
-  /* ----------------------------------------------------------- */ 
-      
+    /* ----------------------------------------------------------- */
+    /*  10. FANCYBOX ( FOR PORTFOLIO POPUP VIEW ) 
+    /* ----------------------------------------------------------- */
+
     jQuery(document).ready(function() {
-      jQuery(".fancybox").fancybox();
-    });  
-   
-    
-  /* ----------------------------------------------------------- */
-  /*  11. SCROLL TOP BUTTON
-  /* ----------------------------------------------------------- */
-
-  //Check to see if the window is top if not then display button
-
-    jQuery(window).scroll(function(){
-      if (jQuery(this).scrollTop() > 300) {
-        jQuery('.scrollToTop').fadeIn();
-      } else {
-        jQuery('.scrollToTop').fadeOut();
-      }
+        jQuery(".fancybox").fancybox();
     });
-     
+
+
+    /* ----------------------------------------------------------- */
+    /*  11. SCROLL TOP BUTTON
+    /* ----------------------------------------------------------- */
+
+    //Check to see if the window is top if not then display button
+
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > 300) {
+            jQuery('.scrollToTop').fadeIn();
+        } else {
+            jQuery('.scrollToTop').fadeOut();
+        }
+    });
+
     //Click event to scroll to top
 
-    jQuery('.scrollToTop').click(function(){
-      jQuery('html, body').animate({scrollTop : 0},800);
-      return false;
+    jQuery('.scrollToTop').click(function() {
+        jQuery('html, body').animate({ scrollTop: 0 }, 800);
+        return false;
     });
-  
-  /* ----------------------------------------------------------- */
-  /*  12. PRELOADER
-  /* ----------------------------------------------------------- */
 
-   jQuery(window).load(function() { // makes sure the whole site is loaded      
-      jQuery('#aa-preloader-area').delay(300).fadeOut('slow'); // will fade out      
+    /* ----------------------------------------------------------- */
+    /*  12. PRELOADER
+    /* ----------------------------------------------------------- */
+
+    jQuery(window).load(function() { // makes sure the whole site is loaded      
+        jQuery('#aa-preloader-area').delay(300).fadeOut('slow'); // will fade out      
     })
-   
 
 
-  /* ----------------------------------------------------------- */
-  /*  13. GRID AND LIST LAYOUT CHANGER 
-  /* ----------------------------------------------------------- */
 
-  jQuery("#aa-list-properties").click(function(e){
-    e.preventDefault(e);
-    jQuery(".aa-properties-nav").addClass("aa-list-view");
-  });
-  jQuery("#aa-grid-properties").click(function(e){
-    e.preventDefault(e);
-    jQuery(".aa-properties-nav").removeClass("aa-list-view");
-  });
+    /* ----------------------------------------------------------- */
+    /*  13. GRID AND LIST LAYOUT CHANGER 
+    /* ----------------------------------------------------------- */
+
+    jQuery("#aa-list-properties").click(function(e) {
+        e.preventDefault(e);
+        jQuery(".aa-properties-nav").addClass("aa-list-view");
+    });
+    jQuery("#aa-grid-properties").click(function(e) {
+        e.preventDefault(e);
+        jQuery(".aa-properties-nav").removeClass("aa-list-view");
+    });
 
 
-  /* ----------------------------------------------------------- */
-  /*  14. RELATED ITEM SLIDER (SLICK SLIDER)
-  /* ----------------------------------------------------------- */      
+    /* ----------------------------------------------------------- */
+    /*  14. RELATED ITEM SLIDER (SLICK SLIDER)
+    /* ----------------------------------------------------------- */
 
     jQuery('.aa-related-item-slider').slick({
-      dots: false,
-      infinite: false,
-      speed: 300,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    }); 
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
 
- 
+
 });
-
