@@ -135,15 +135,16 @@ form .input-field {
 
 .p_back-signin {
   font-size: 16px;
+  text-align: center;
 }
 
 .p_back-signin a {
-  color: #000;
+  color: #5372F0;
 }
 
 .p_back-signin a:hover {
-  color: #0039d4;
-  font-weight: bold;
+  /* color: #0039d4; */
+  /* font-weight: bold; */
   text-decoration: underline;
 }
 
@@ -166,3 +167,4 @@ form .input-field {
   color: #fff;
   margin: 0 auto;
 }
+
