@@ -178,3 +178,31 @@ form input[type="submit"]:hover {
   font-weight: bold;
   margin-top: 7px;
 }
+
+
+/* Back SIGNIN */
+.back-signin {
+  margin-top: 15px;
+}
+
+.back-icon {
+  background-color: transparent;
+  z-index: 1000;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.back-icon i {
+  font-size: 30px;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5px;
+}
